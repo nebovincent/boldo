@@ -1,0 +1,30 @@
+.our_story_wrapper {
+  background-color: #0a2640;
+  color: #ffffff;
+
+  p:first-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 118px 0px 0px 300px !important;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    margin: 10px 258px 30px 300px !important;
+  }
+  p:last-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0px 300px 120px 300px !important;
+  }
+}

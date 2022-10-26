@@ -1,0 +1,82 @@
+.our_team_wrapper {
+  p:first-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 118px 0px 0px 300px !important;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    margin: 10px 258px 30px 300px !important;
+  }
+  .desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0px 300px 50px 300px !important;
+  }
+  .general_managers_wrapper {
+    display: flex;
+    padding: 0px 250px 110px 250px !important;
+    gap: 75px;
+    .general_manager_element {
+      .gm_img {
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 32px;
+      }
+    }
+  }
+  .regional_managers_wrapper {
+    padding: 0px 250px 120px 250px !important;
+
+    .regional_managers_row {
+      display: flex;
+      justify-content: space-between;
+      .regional_manager_element {
+        display: flex;
+        gap: 24px;
+        .regional_manager_img_wrapper {
+          .rm_img {
+          }
+        }
+        div:nth-child(2) {
+          h4 {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 48px;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+      }
+      .regional_manager_element:first-child {
+        margin-right: 100px;
+      }
+    }
+    .regional_managers_row:first-child {
+      margin-bottom: 46px;
+    }
+    .regional_managers_row:last-child {
+    }
+  }
+}

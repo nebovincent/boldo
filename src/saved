@@ -1,0 +1,81 @@
+{/* SEO OPTIMIZATION WITH REACT HELMET ASYNC */}
+<HelmetProvider>
+    <Helmet>
+        <title>Chatvia App</title>
+        <link rel="canonical" href="" />
+        {/* special metatag */}
+        <link rel="canonical" href="" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        {/* special metatag */}
+    </Helmet>
+</HelmetProvider>
+{/* SEO OPTIMIZATION WITH REACT HELMET ASYNC */}
+
+{/* ROUTES DEFINITION */}
+<Routes>
+    <Route path="/" element={<Landing />} />
+    <Route path="register" element={<Register />} />
+    <Route path="login" element={<Login />} />
+    <Route path="recoverpassword" element={<RecoverPassword />} />
+</Routes>
+{/* ROUTES DEFINITION */}
+
+
+//////////////////////
+
+
+<div className={classes.main_wrapper}>
+    <div className={classes.desc_main_wrapper}>
+        <div className={classes.top_logo_wrapper}>
+            <img src="images/logos/logo-dark.png" alt="" height="30px" />
+        </div>
+        <div className={classes.header_desc}>
+            <h3>Recover Password</h3>
+            <p>Recover your password and continue with Chatvia</p>
+        </div>
+    </div>
+
+    <div className={classes.form_wrapper}>
+        <div>
+            <form onSubmit={submitForm}>
+                <div className={`${classes.form_group_wrapper}`}>
+                    <div className={classes.form_group}>
+                        <label>Email</label>
+                        <div className={classes.input_wrapper}>
+                            <div className={classes.icon_wrapper}>
+                                <BsEnvelopeFill className={classes.icon} />
+                            </div>
+                            <input type="text" onChange={(e)=> {
+                            setFormInputs({
+                            ...formInputs,
+                            usernameOrPassword: e.target.value,
+                            });
+                            }}
+                            />
+                        </div>
+                    </div>
+
+                    <div className={classes.form_group}>
+                        <button className={`${classes.input_wrapper} ${classes.input_submit_wrapper}`}>
+                            <p>SUBMIT</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div className={classes.footer_div}>
+        <p>
+            import {Link} from "react-router-dom"; Remember your password?
+            <span>
+                <Link to="login">Sign In</Link>
+            </span>
+        </p>
+        <p>© {new Date().getFullYear()} Chatvia. Crafted with love by Fab</p>
+    </div>
+</div>
