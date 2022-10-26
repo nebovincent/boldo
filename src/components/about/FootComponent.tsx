@@ -6,7 +6,8 @@ function FootComponent() {
   const [emailInput, setEmailInput] = useState("");
   const submitEmail = (e: any) => {
     e.preventDefault();
-    setEmailInput(e.target.value);
+    //send email to backend api
+    setEmailInput("");
   };
   return (
     <>
@@ -16,12 +17,12 @@ function FootComponent() {
           <div className={classes.email_subs_bg_context}>
             <h1>An enterprise template to ramp up your company website</h1>
             <div className={classes.email_sub_elements}>
-              <form>
+              <form onSubmit={submitEmail}>
                 <input
                   type="text"
                   placeholder="Your email address"
                   value={emailInput}
-                  onChange={submitEmail}
+                  onChange={(e) => setEmailInput(e.target.value)}
                 />
                 <button type="submit">Start now</button>
               </form>
