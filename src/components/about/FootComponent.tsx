@@ -4,6 +4,10 @@ import logo from "src/images/logo.png";
 
 function FootComponent() {
   const [emailInput, setEmailInput] = useState("");
+  const submitEmail = (e: any) => {
+    e.preventDefault();
+    setEmailInput(e.target.value);
+  };
   return (
     <>
       <div className={classes.main_wrapper}>
@@ -17,7 +21,7 @@ function FootComponent() {
                   type="text"
                   placeholder="Your email address"
                   value={emailInput}
-                  onChange={(e) => setEmailInput(e.target.value)}
+                  onChange={submitEmail}
                 />
                 <button type="submit">Start now</button>
               </form>
